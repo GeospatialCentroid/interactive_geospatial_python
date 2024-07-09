@@ -33,3 +33,4 @@ dependencies:
   - geojson
   - pdal
   - planetary-computer
+  - papermill

@@ -5,8 +5,8 @@
 #SBATCH --output=cnrp-job.%j.out
 #SBATCH --time=1:00:00
 #SBATCH --qos=normal
-#SBATCH --nodes=2
-#SBATCH --ntasks=48
+#SBATCH --nodes=1
+#SBATCH --ntasks=4
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=akhilsin@colostate.edu
 

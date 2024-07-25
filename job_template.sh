@@ -15,5 +15,5 @@ module load anaconda
 conda activate geospatial
 
 
-papermill Boundary\ Raster\ Classification_complete.ipynb -p year 2021
+papermill 5_Boundary\ Raster\ Classification_complete.ipynb -p year 2021
 

@@ -1,4 +1,4 @@
-name: geospatial
+name: geospatial_environment
 channels:
   - conda-forge
 dependencies:
@@ -34,3 +34,5 @@ dependencies:
   - pdal
   - planetary-computer
   - papermill
+  - geoviews
+  - cartopy

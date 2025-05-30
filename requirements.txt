@@ -1,0 +1,28 @@
+# Jupyter and Scientific Libraries
+jupyterlab>=3.1.0
+numpy>=1.20.0
+
+matplotlib>=3.4.0
+xarray>=0.17
+scipy
+folium
+planetary-computer
+localtileserver
+rasterio>=1.2.0
+geopandas>=0.8.0
+rioxarray>=0.7.0
+earthpy>=0.9.0
+xarray-spatial
+descartes>=1.0.0
+pystac-client>=0.5.1
+graphviz  # corresponds to python-graphviz
+dask
+pyproj
+pyarrow
+osmnx
+datashader
+geojson
+papermill
+geoviews
+cartopy
+geemap

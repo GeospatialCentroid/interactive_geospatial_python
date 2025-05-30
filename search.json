@@ -3,8 +3,50 @@
   "features": [
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+      ],
       "id": "S2B_13TDE_20240321_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2024-03-22T02:10:05.882Z",
         "platform": "sentinel-2b",
@@ -13,7 +55,6 @@
           "msi"
         ],
         "eo:cloud_cover": 7.208619,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -50,34 +91,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2024-03-22T02:10:05.882Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2024-03-22T02:10:05.882Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -1396,27 +1411,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json"
+      ],
       "id": "S2B_13TDF_20240321_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2024-03-22T02:19:26.854Z",
         "platform": "sentinel-2b",
@@ -1425,7 +1467,6 @@
           "msi"
         ],
         "eo:cloud_cover": 1.55384,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -1462,34 +1503,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2024-03-22T02:19:26.854Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2024-03-22T02:19:26.854Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -2808,27 +2823,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
       "id": "S2B_13TDE_20240301_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2024-03-02T00:51:25.402Z",
         "platform": "sentinel-2b",
@@ -2837,7 +2879,6 @@
           "msi"
         ],
         "eo:cloud_cover": 1.358144,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -2874,34 +2915,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2024-03-02T00:51:25.402Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2024-03-02T00:51:25.402Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -4220,27 +4235,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+      ],
       "id": "S2B_13TDF_20240301_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2024-03-02T00:50:27.878Z",
         "platform": "sentinel-2b",
@@ -4249,7 +4291,6 @@
           "msi"
         ],
         "eo:cloud_cover": 3.434527,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -4286,34 +4327,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2024-03-02T00:50:27.878Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2024-03-02T00:50:27.878Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -5632,27 +5647,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json"
+      ],
       "id": "S2A_13TDE_20240225_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2024-02-26T01:57:20.420Z",
         "platform": "sentinel-2a",
@@ -5661,7 +5703,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.91718,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -5698,34 +5739,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2024-02-26T01:57:20.420Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2024-02-26T01:57:20.420Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -7044,27 +7059,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+      ],
       "id": "S2A_13TDF_20240225_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2024-02-26T00:44:14.479Z",
         "platform": "sentinel-2a",
@@ -7073,7 +7115,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.006586,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -7110,34 +7151,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2024-02-26T00:44:14.479Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2024-02-26T00:44:14.479Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -8456,27 +8471,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json"
+      ],
       "id": "S2A_13TDE_20240205_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2024-02-05T23:45:47.012Z",
         "platform": "sentinel-2a",
@@ -8485,7 +8527,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.607911,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -8522,34 +8563,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2024-02-05T23:45:47.012Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2024-02-05T23:45:47.012Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -9868,27 +9883,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+      ],
       "id": "S2A_13TDF_20240205_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2024-02-05T23:42:56.495Z",
         "platform": "sentinel-2a",
@@ -9897,7 +9939,6 @@
           "msi"
         ],
         "eo:cloud_cover": 2.531976,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -9934,34 +9975,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2024-02-05T23:42:56.495Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2024-02-05T23:42:56.495Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -11280,27 +11295,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+      ],
       "id": "S2B_13TDE_20240131_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2024-01-31T23:35:30.125Z",
         "platform": "sentinel-2b",
@@ -11309,7 +11351,6 @@
           "msi"
         ],
         "eo:cloud_cover": 3.940253,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -11346,34 +11387,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2024-01-31T23:35:30.125Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2024-01-31T23:35:30.125Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -12692,27 +12707,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+      ],
       "id": "S2B_13TDF_20240131_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2024-01-31T22:55:33.135Z",
         "platform": "sentinel-2b",
@@ -12721,7 +12763,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.000972,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -12758,34 +12799,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2024-01-31T22:55:33.135Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2024-01-31T22:55:33.135Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -14104,27 +14119,54 @@
           ]
         }
       },
+      "collection": "sentinel-2-l2a"
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "id": "S2A_13TDF_20240116_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
       "bbox": [
         -106.19943694800676,
         40.556716039202904,
         -104.88298037277788,
         41.55177612128904
       ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
-      ],
-      "collection": "sentinel-2-l2a"
-    },
-    {
-      "type": "Feature",
-      "stac_version": "1.0.0",
-      "id": "S2A_13TDF_20240116_0_L2A",
       "properties": {
         "created": "2024-01-17T05:03:39.082Z",
         "platform": "sentinel-2a",
@@ -14133,7 +14175,6 @@
           "msi"
         ],
         "eo:cloud_cover": 9.508794,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -14170,34 +14211,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2024-01-17T05:03:39.082Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2024-01-17T05:03:39.082Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -15516,27 +15531,54 @@
           ]
         }
       },
+      "collection": "sentinel-2-l2a"
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json"
+      ],
+      "id": "S2A_13TDF_20240106_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
       "bbox": [
         -106.19943694800676,
         40.556716039202904,
         -104.88298037277788,
         41.55177612128904
       ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-      ],
-      "collection": "sentinel-2-l2a"
-    },
-    {
-      "type": "Feature",
-      "stac_version": "1.0.0",
-      "id": "S2A_13TDF_20240106_0_L2A",
       "properties": {
         "created": "2024-01-06T23:28:44.144Z",
         "platform": "sentinel-2a",
@@ -15545,7 +15587,6 @@
           "msi"
         ],
         "eo:cloud_cover": 2.606521,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -15582,34 +15623,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2024-01-06T23:28:44.144Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2024-01-06T23:28:44.144Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -16928,27 +16943,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json"
+      ],
       "id": "S2B_13TDE_20231222_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-12-22T22:53:23.884Z",
         "platform": "sentinel-2b",
@@ -16957,7 +16999,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.327739,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -16994,34 +17035,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-12-22T22:53:23.884Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-12-22T22:53:23.884Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -18340,27 +18355,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+      ],
       "id": "S2B_13TDF_20231222_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-12-22T22:23:21.869Z",
         "platform": "sentinel-2b",
@@ -18369,7 +18411,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.011506,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -18406,34 +18447,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-12-22T22:23:21.869Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-12-22T22:23:21.869Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -19752,27 +19767,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+      ],
       "id": "S2A_13TDE_20231217_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-12-17T23:57:18.863Z",
         "platform": "sentinel-2a",
@@ -19781,7 +19823,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.00277,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -19818,34 +19859,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-12-17T23:57:18.863Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-12-17T23:57:18.863Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -21164,27 +21179,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+      ],
       "id": "S2A_13TDF_20231217_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-12-17T23:49:08.910Z",
         "platform": "sentinel-2a",
@@ -21193,7 +21235,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.001563,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -21230,34 +21271,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-12-17T23:49:08.910Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-12-17T23:49:08.910Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -22576,27 +22591,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
       "id": "S2A_13TDE_20231127_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-11-27T23:30:31.778Z",
         "platform": "sentinel-2a",
@@ -22605,7 +22647,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.525854,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -22642,34 +22683,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-11-27T23:30:31.778Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-11-27T23:30:31.778Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -23988,27 +24003,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
       "id": "S2A_13TDF_20231127_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-11-27T23:42:22.753Z",
         "platform": "sentinel-2a",
@@ -24017,7 +24059,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.12644,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -24054,34 +24095,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-11-27T23:42:22.753Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-11-27T23:42:22.753Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -25400,27 +25415,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+      ],
       "id": "S2B_13TDE_20231122_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-11-22T22:34:13.691Z",
         "platform": "sentinel-2b",
@@ -25429,7 +25471,6 @@
           "msi"
         ],
         "eo:cloud_cover": 2.825698,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -25466,34 +25507,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-11-22T22:34:13.691Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-11-22T22:34:13.691Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -26812,27 +26827,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json"
+      ],
       "id": "S2A_13TDF_20231117_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-11-18T00:11:19.340Z",
         "platform": "sentinel-2a",
@@ -26841,7 +26883,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.200875,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -26878,34 +26919,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-11-18T00:11:19.340Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-11-18T00:11:19.340Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -28224,27 +28239,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+      ],
       "id": "S2B_13TDE_20231112_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-11-13T10:39:06.779Z",
         "platform": "sentinel-2b",
@@ -28253,7 +28295,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.006337,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -28290,34 +28331,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-11-13T10:39:06.779Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-11-13T10:39:06.779Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -29636,27 +29651,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+      ],
       "id": "S2B_13TDF_20231112_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-11-13T10:42:03.157Z",
         "platform": "sentinel-2b",
@@ -29665,7 +29707,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.000358,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -29702,34 +29743,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-11-13T10:42:03.157Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-11-13T10:42:03.157Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -31048,27 +31063,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
       "id": "S2B_13TDE_20231023_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-10-24T00:39:36.911Z",
         "platform": "sentinel-2b",
@@ -31077,7 +31119,6 @@
           "msi"
         ],
         "eo:cloud_cover": 3.251406,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -31114,34 +31155,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-10-24T00:39:36.911Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-10-24T00:39:36.911Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -32460,27 +32475,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+      ],
       "id": "S2B_13TDF_20231023_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-10-24T00:38:26.059Z",
         "platform": "sentinel-2b",
@@ -32489,7 +32531,6 @@
           "msi"
         ],
         "eo:cloud_cover": 9.962638,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -32526,34 +32567,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-10-24T00:38:26.059Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-10-24T00:38:26.059Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -33872,27 +33887,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+      ],
       "id": "S2A_13TDE_20231008_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-10-09T01:25:21.658Z",
         "platform": "sentinel-2a",
@@ -33901,7 +33943,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.000299,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -33938,34 +33979,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-10-09T01:25:21.658Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-10-09T01:25:21.658Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -35284,27 +35299,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json"
+      ],
       "id": "S2A_13TDF_20231008_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-10-09T03:16:26.858Z",
         "platform": "sentinel-2a",
@@ -35313,7 +35355,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.000239,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -35350,34 +35391,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-10-09T03:16:26.858Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-10-09T03:16:26.858Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -36696,27 +36711,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+      ],
       "id": "S2B_13TDE_20230923_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-09-24T02:45:47.409Z",
         "platform": "sentinel-2b",
@@ -36725,7 +36767,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.003238,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -36762,34 +36803,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-09-24T02:45:47.409Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-09-24T02:45:47.409Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -38108,27 +38123,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
       "id": "S2B_13TDF_20230923_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-09-24T02:47:14.376Z",
         "platform": "sentinel-2b",
@@ -38137,7 +38179,6 @@
           "msi"
         ],
         "eo:cloud_cover": 1.589374,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -38174,34 +38215,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-09-24T02:47:14.376Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-09-24T02:47:14.376Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -39520,27 +39535,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+      ],
       "id": "S2A_13TDE_20230908_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-09-09T05:51:33.031Z",
         "platform": "sentinel-2a",
@@ -39549,7 +39591,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.08003,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -39586,34 +39627,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-09-09T05:51:33.031Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-09-09T05:51:33.031Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -40932,27 +40947,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json"
+      ],
       "id": "S2A_13TDF_20230908_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-09-09T05:47:28.742Z",
         "platform": "sentinel-2a",
@@ -40961,7 +41003,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.546684,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -40998,34 +41039,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-09-09T05:47:28.742Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-09-09T05:47:28.742Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -42344,27 +42359,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+      ],
       "id": "S2B_13TDE_20230814_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-08-15T04:12:53.460Z",
         "platform": "sentinel-2b",
@@ -42373,7 +42415,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.149273,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -42410,34 +42451,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-08-15T04:12:53.460Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-08-15T04:12:53.460Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -43756,27 +43771,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+      ],
       "id": "S2B_13TDF_20230814_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-08-15T04:11:53.848Z",
         "platform": "sentinel-2b",
@@ -43785,7 +43827,6 @@
           "msi"
         ],
         "eo:cloud_cover": 2.3e-05,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -43822,34 +43863,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-08-15T04:11:53.848Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-08-15T04:11:53.848Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -45168,27 +45183,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
       "id": "S2A_13TDE_20230809_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-08-10T06:11:52.363Z",
         "platform": "sentinel-2a",
@@ -45197,7 +45239,6 @@
           "msi"
         ],
         "eo:cloud_cover": 3.748295,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -45234,34 +45275,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-08-10T06:11:52.363Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-08-10T06:11:52.363Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -46580,27 +46595,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json"
+      ],
       "id": "S2A_13TDF_20230809_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-08-10T06:18:58.159Z",
         "platform": "sentinel-2a",
@@ -46609,7 +46651,6 @@
           "msi"
         ],
         "eo:cloud_cover": 3.628571,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -46646,34 +46687,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-08-10T06:18:58.159Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-08-10T06:18:58.159Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -47992,27 +48007,54 @@
           ]
         }
       },
+      "collection": "sentinel-2-l2a"
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json"
+      ],
+      "id": "S2A_13TDF_20230730_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
       "bbox": [
         -106.19943694800676,
         40.556716039202904,
         -104.88298037277788,
         41.55177612128904
       ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json"
-      ],
-      "collection": "sentinel-2-l2a"
-    },
-    {
-      "type": "Feature",
-      "stac_version": "1.0.0",
-      "id": "S2A_13TDF_20230730_0_L2A",
       "properties": {
         "created": "2023-07-31T05:31:33.953Z",
         "platform": "sentinel-2a",
@@ -48021,7 +48063,6 @@
           "msi"
         ],
         "eo:cloud_cover": 10.910063,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -48058,34 +48099,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-07-31T05:31:33.953Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-07-31T05:31:33.953Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -49404,27 +49419,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+      ],
       "id": "S2B_13TDE_20230715_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-07-16T04:40:38.232Z",
         "platform": "sentinel-2b",
@@ -49433,7 +49475,6 @@
           "msi"
         ],
         "eo:cloud_cover": 7.473067,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -49470,34 +49511,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.1"
         },
-        "updated": "2023-07-16T04:40:38.232Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-07-16T04:40:38.232Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -50816,27 +50831,54 @@
           ]
         }
       },
+      "collection": "sentinel-2-l2a"
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
+      "id": "S2A_13TDE_20230710_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
       "bbox": [
         -106.18316062292897,
         39.65576169772817,
         -104.88456877606482,
         40.650789813976196
       ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
-      ],
-      "collection": "sentinel-2-l2a"
-    },
-    {
-      "type": "Feature",
-      "stac_version": "1.0.0",
-      "id": "S2A_13TDE_20230710_0_L2A",
       "properties": {
         "created": "2023-07-11T06:49:23.537Z",
         "platform": "sentinel-2a",
@@ -50845,7 +50887,6 @@
           "msi"
         ],
         "eo:cloud_cover": 11.645426,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -50882,34 +50923,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.0"
         },
-        "updated": "2023-07-11T06:49:23.537Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-07-11T06:49:23.537Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -52228,27 +52243,54 @@
           ]
         }
       },
+      "collection": "sentinel-2-l2a"
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+      ],
+      "id": "S2B_13TDE_20230625_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
       "bbox": [
         -106.18316062292897,
         39.65576169772817,
         -104.88456877606482,
         40.650789813976196
       ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-      ],
-      "collection": "sentinel-2-l2a"
-    },
-    {
-      "type": "Feature",
-      "stac_version": "1.0.0",
-      "id": "S2B_13TDE_20230625_0_L2A",
       "properties": {
         "created": "2023-06-26T06:18:47.238Z",
         "platform": "sentinel-2b",
@@ -52257,7 +52299,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.62317,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -52294,34 +52335,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.0"
         },
-        "updated": "2023-06-26T06:18:47.238Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-06-26T06:18:47.238Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -53640,27 +53655,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+      ],
       "id": "S2A_13TDF_20230531_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-06-01T05:51:53.716Z",
         "platform": "sentinel-2a",
@@ -53669,7 +53711,6 @@
           "msi"
         ],
         "eo:cloud_cover": 14.088815,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -53706,34 +53747,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.0"
         },
-        "updated": "2023-06-01T05:51:53.716Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-06-01T05:51:53.716Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -55052,27 +55067,54 @@
           ]
         }
       },
+      "collection": "sentinel-2-l2a"
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+      ],
+      "id": "S2A_13TDF_20230521_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
       "bbox": [
         -106.19943694800676,
         40.556716039202904,
         -104.88298037277788,
         41.55177612128904
       ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
-      ],
-      "collection": "sentinel-2-l2a"
-    },
-    {
-      "type": "Feature",
-      "stac_version": "1.0.0",
-      "id": "S2A_13TDF_20230521_0_L2A",
       "properties": {
         "created": "2023-05-22T06:07:56.168Z",
         "platform": "sentinel-2a",
@@ -55081,7 +55123,6 @@
           "msi"
         ],
         "eo:cloud_cover": 10.106304,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -55118,34 +55159,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.0"
         },
-        "updated": "2023-05-22T06:07:56.168Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-05-22T06:07:56.168Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -56464,27 +56479,54 @@
           ]
         }
       },
+      "collection": "sentinel-2-l2a"
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json"
+      ],
+      "id": "S2A_13TDF_20230501_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
       "bbox": [
         -106.19943694800676,
         40.556716039202904,
         -104.88298037277788,
         41.55177612128904
       ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
-      ],
-      "collection": "sentinel-2-l2a"
-    },
-    {
-      "type": "Feature",
-      "stac_version": "1.0.0",
-      "id": "S2A_13TDF_20230501_0_L2A",
       "properties": {
         "created": "2023-05-02T05:45:25.634Z",
         "platform": "sentinel-2a",
@@ -56493,7 +56535,6 @@
           "msi"
         ],
         "eo:cloud_cover": 11.772061,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -56530,34 +56571,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.0"
         },
-        "updated": "2023-05-02T05:45:25.634Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-05-02T05:45:25.634Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -57876,27 +57891,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+      ],
       "id": "S2A_13TDE_20230411_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-04-12T05:42:49.275Z",
         "platform": "sentinel-2a",
@@ -57905,7 +57947,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.017916,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -57942,34 +57983,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.0"
         },
-        "updated": "2023-04-12T05:42:49.275Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-04-12T05:42:49.275Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -59288,27 +59303,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json"
+      ],
       "id": "S2A_13TDF_20230411_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-04-12T05:43:26.893Z",
         "platform": "sentinel-2a",
@@ -59317,7 +59359,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.001427,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -59354,34 +59395,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.0"
         },
-        "updated": "2023-04-12T05:43:26.893Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-04-12T05:43:26.893Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -60700,27 +60715,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
       "id": "S2B_13TDE_20230406_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-04-07T03:47:11.406Z",
         "platform": "sentinel-2b",
@@ -60729,7 +60771,6 @@
           "msi"
         ],
         "eo:cloud_cover": 1.225882,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -60766,34 +60807,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.0"
         },
-        "updated": "2023-04-07T03:47:11.406Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-04-07T03:47:11.406Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -62112,27 +62127,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+      ],
       "id": "S2B_13TDF_20230406_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-04-07T03:47:02.649Z",
         "platform": "sentinel-2b",
@@ -62141,7 +62183,6 @@
           "msi"
         ],
         "eo:cloud_cover": 0.433618,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -62178,34 +62219,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.0"
         },
-        "updated": "2023-04-07T03:47:02.649Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-04-07T03:47:02.649Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -63524,27 +63539,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+      ],
       "id": "S2A_13TDE_20230401_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ],
+            [
+              -104.88456877606482,
+              40.650789813976196
+            ],
+            [
+              -104.88623172845638,
+              39.661560248682505
+            ],
+            [
+              -106.1661201925584,
+              39.65576169772817
+            ],
+            [
+              -106.18316062292897,
+              40.64478591807637
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.18316062292897,
+        39.65576169772817,
+        -104.88456877606482,
+        40.650789813976196
+      ],
       "properties": {
         "created": "2023-04-02T06:11:20.331Z",
         "platform": "sentinel-2a",
@@ -63553,7 +63595,6 @@
           "msi"
         ],
         "eo:cloud_cover": 2.393323,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DE",
@@ -63590,34 +63631,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.0"
         },
-        "updated": "2023-04-02T06:11:20.331Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ],
-            [
-              -104.88456877606482,
-              40.650789813976196
-            ],
-            [
-              -104.88623172845638,
-              39.661560248682505
-            ],
-            [
-              -106.1661201925584,
-              39.65576169772817
-            ],
-            [
-              -106.18316062292897,
-              40.64478591807637
-            ]
-          ]
-        ]
+        "updated": "2023-04-02T06:11:20.331Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -64936,27 +64951,54 @@
           ]
         }
       },
-      "bbox": [
-        -106.18316062292897,
-        39.65576169772817,
-        -104.88456877606482,
-        40.650789813976196
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     },
     {
       "type": "Feature",
-      "stac_version": "1.0.0",
+      "stac_version": "1.1.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+      ],
       "id": "S2A_13TDF_20230401_0_L2A",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ],
+            [
+              -104.88298037277788,
+              41.55177612128904
+            ],
+            [
+              -104.88472023265442,
+              40.56270140747389
+            ],
+            [
+              -106.18160864147406,
+              40.556716039202904
+            ],
+            [
+              -106.19943694800676,
+              41.545579887195935
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        -106.19943694800676,
+        40.556716039202904,
+        -104.88298037277788,
+        41.55177612128904
+      ],
       "properties": {
         "created": "2023-04-02T06:26:20.312Z",
         "platform": "sentinel-2a",
@@ -64965,7 +65007,6 @@
           "msi"
         ],
         "eo:cloud_cover": 7.392261,
-        "proj:epsg": 32613,
         "mgrs:utm_zone": 13,
         "mgrs:latitude_band": "T",
         "mgrs:grid_square": "DF",
@@ -65002,34 +65043,8 @@
         "processing:software": {
           "sentinel2-to-stac": "0.1.0"
         },
-        "updated": "2023-04-02T06:26:20.312Z"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ],
-            [
-              -104.88298037277788,
-              41.55177612128904
-            ],
-            [
-              -104.88472023265442,
-              40.56270140747389
-            ],
-            [
-              -106.18160864147406,
-              40.556716039202904
-            ],
-            [
-              -106.19943694800676,
-              41.545579887195935
-            ]
-          ]
-        ]
+        "updated": "2023-04-02T06:26:20.312Z",
+        "proj:code": "EPSG:32613"
       },
       "links": [
         {
@@ -66348,21 +66363,6 @@
           ]
         }
       },
-      "bbox": [
-        -106.19943694800676,
-        40.556716039202904,
-        -104.88298037277788,
-        41.55177612128904
-      ],
-      "stac_extensions": [
-        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-        "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-        "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
-      ],
       "collection": "sentinel-2-l2a"
     }
   ]

@@ -89,7 +89,7 @@ Press ENTER again.
 ## 5. Launch Jupyter Notebook
 
 ```bash
-jupyter notebook
+jupyter lab
 ```
 
 Press ENTER to launch.

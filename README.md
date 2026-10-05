@@ -1,26 +1,128 @@
-The following jupyter notebooks have been adapted from the carpentries material [Introduction to Geospatial Raster and Vector Data with Python](https://carpentries-incubator.github.io/geospatial-python/)
+# Geospatial Python Notebooks – Setup and Usage Guide
 
-Episodes 5-7, and 9 have been covered:
-* 5 Access satellite imagery using Python
-* 6 Read and visualize raster data
-* 7 Vector data in Python
-* 9 Raster Calculations in Python
+The following Jupyter notebooks have been adapted from the Carpentries material:  
+Introduction to Geospatial Raster and Vector Data with Python  
+https://carpentries-incubator.github.io/geospatial-python/
 
-Each with a working and complete notebook for use in workshop instruction.
+The following episodes are included:
 
-*Special attention has been given to using interactive plots for choosing both points of interest (POI) and areas of interest (AOI)*
+- Episode 5: Access satellite imagery using Python  
+- Episode 6: Read and visualize raster data  
+- Episode 7: Vector data in Python  
+- Episode 9: Raster Calculations in Python  
 
-*The last episode 'Raster Calculations in Python' has also been adaped for classifying NDVI over mulitple years, and saving both the generated geotiffs and output statistics of each year.* 
+Each notebook is complete and ready for workshop instruction.
 
+Special features:
+- Interactive plots for selecting Points of Interest (POI) and Areas of Interest (AOI)
+- NDVI classification across multiple years
+- Outputs include GeoTIFF files and summary statistics for each year
 
-**For these notebooks to work, a 'geospatial' environment must we created which includes all the necessary libraries.**
+---
 
-With [Anaconda](https://www.anaconda.com/) installed the following steps can be used to create this environment:
+## IMPORTANT REQUIREMENT
 
-1. From the Anaconda Navigator click the "Environments" button on the left.
-1. Then from the bottom of the screen, click Import.
-1. From the popup that appears, click the folder icon next to the local drive text field and choose "environment.yaml" (downloaded as part of this repo).
-1. Accept the default name, then click the "Import" button from the popup and wait while the environment is created.
-1. Make sure the "geospatial" environment is selected and then launch jupyter lab
+A conda environment named `geospatial` must be created before running these notebooks.
 
-Alternate virtual environment creation instructions can be found here [Software Setup](https://carpentries-incubator.github.io/geospatial-python/index.html#software-setup).
+---
+
+## BEFORE YOU BEGIN
+
+1. Download this repository from GitHub:
+   - Click the green **Code** button
+   - Select **Download ZIP**
+2. Unzip the folder to a location on your computer
+
+---
+
+## 1. Install Conda (Recommended)
+
+Install Miniforge from:
+https://conda-forge.org/download/
+
+Download and install the latest version for your operating system.
+
+---
+
+## 2. Open Terminal or Miniforge Prompt
+
+- Windows: Open **Miniforge Prompt**
+- Mac: Open **Terminal**
+
+---
+
+## 3. Navigate to Your Project Directory
+
+Use the `cd` command:
+
+```bash
+cd {project directory}
+```
+
+Tip:
+- Type `cd ` (with a space)
+- Drag your project folder into the terminal window
+- Press ENTER to run the command
+
+⚠️ IMPORTANT: You must press the ENTER key after typing each command in the terminal. Commands will NOT run until ENTER is pressed.
+
+---
+
+## 4. Create and Activate the Environment
+
+```bash
+conda env create -n geospatial --file geospatial.yaml
+```
+
+Press ENTER to execute.
+
+Then activate:
+
+```bash
+conda activate geospatial
+```
+
+Press ENTER again.
+
+---
+
+## 5. Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Press ENTER to launch.
+
+Your browser will open and allow you to run the notebooks.
+
+---
+
+## Alternate Installation (Anaconda)
+
+If using Anaconda:
+
+1. Open Anaconda Navigator
+2. Click **Environments**
+3. Click **Import**
+4. Select the `geospatial.yaml` file
+5. Keep the default environment name
+6. Click **Import**
+7. Select the new environment
+8. Launch Jupyter Lab
+
+---
+
+## Additional Resources
+
+Software setup guide:
+https://carpentries-incubator.github.io/geospatial-python/index.html#software-setup
+
+---
+
+## Notes
+
+- Ensure all commands are run inside the terminal using ENTER
+- Do not skip environment creation
+- If errors occur, verify you are in the correct directory
+
